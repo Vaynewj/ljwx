@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="body1">
     <div class="searchBtn">
       <div>
         <img class="menuBtn" src="../assets/02.png" alt="">
@@ -38,7 +38,8 @@
       <img class="iMgs" src="../assets/04.png" alt="">
     </div>
     <div class="show">
-       <div class="Id">
+       <div class="sbox">
+         <div class="Id">
          ETH/USDT
          <i class="rateBtn">-4.76%</i>
        </div>
@@ -48,17 +49,21 @@
        <div class="faceValue">
          ￥7785.59
        </div>
-       <div class="Id">
-         HT/USDT
-         <i class="rateBtn">-2.04%</i>
        </div>
-       <div class="rate">
-         5.2810
-       </div>
-       <div class="faceValue">
-         ￥33.82
-       </div>
-       <div class="Id">
+        <div class="bbox">
+           <div class="Id">
+          HT/USDT
+          <i class="rateBtn">-2.04%</i>
+          </div>
+          <div class="rate">
+          5.2810
+          </div>
+          <div class="faceValue">
+          ￥33.82
+           </div>
+        </div>
+       <div>
+         <div class="Id">
          USDT/HUSD
          <i class="rateBn"> +0.03%</i>
        </div>
@@ -68,11 +73,55 @@
        <div class="faceValue">
          ￥6.40
        </div>
+       </div>
     </div>
     <div class="click">
       <div class="easy">
         <img class="imG" src="../assets/05.png" alt="">
         <div class="buy">快捷买币</div>
+      </div>
+      <div class="easy">
+        <img class="imG" src="../assets/06.png" alt="">
+        <div class="buy">新手指南</div>
+      </div>
+      <div class="easy">
+        <img class="imG" src="../assets/07.png" alt="">
+        <div class="buy">分享福利</div>
+      </div>
+      <div class="easy">
+        <img class="imG" src="../assets/08.png" alt="">
+        <div class="buy">联系客服</div>
+      </div>
+    </div>
+    <div class="choose">
+      <div class="recommend">
+      <span class="gmrecommend">官方推荐,收益可见</span>
+      <span class="mrecommend">MineMore精品推荐</span>
+      </div>
+      <div class="selected">
+        <span class="selectedBtn">稳健精选</span>
+        <span class="more">更多</span>
+      </div>
+      <div class="safe">
+        安稳可靠,安心持有不操心
+      </div>
+      <div class="cbox">
+        <div class="abox">
+        <div class="lease">
+        <div class="model">租赁型矿机-云池1</div>
+        <div class="fValue">0.68954510 BTC</div>
+        <div class="timeBtn">理论产出(年)</div>
+        <div class="year">6000.00000 USDT</div>
+      </div>
+      </div>
+      <div class="abox">
+        <div class="lease">
+        <div class="model">租赁型矿机-云池2</div>
+        <div class="fValue">0.68954510 BTC</div>
+        <div class="timeBtn">理论产出(年)</div>
+        <div class="year">6000.00000 USDT</div>
+      </div>
+      </div>
       </div>
     </div>
   </div>
@@ -112,7 +161,9 @@ export default {
 }
 </script>
 <style scoped lang="less">
-.searchBtn{
+.body1{
+  background: #F7F6FB;
+  .searchBtn{
   display: flex;
   justify-content: space-evenly;
   .menuBtn{
@@ -167,6 +218,7 @@ export default {
   vertical-align: middle;
   height: 22px;
   margin: 24px 20px;
+  background: #FFFFFF;
   .textBtn{
     font-size: 22px;
     font-weight: 500;
@@ -190,7 +242,10 @@ export default {
 }
 .show{
   display: flex;
-  margin: 0 auto;
+  margin: 16px 20px 60px 34px;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #FFFFFF;
   .Id{
     font-size: 22px;
     font-weight: 600;
@@ -201,12 +256,14 @@ export default {
       font-weight: 400;
       line-height: 28px;
       color: #E53A43;
+      font-style: normal;
     }
     .rateBn{
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
     color: #51CCB0;
+    font-style: normal;
     }
   }
   .rate{
@@ -223,7 +280,16 @@ export default {
   }
 }
 .click{
+  margin: 20px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 710px;
+  height: 148px;
+  background: #FFFFFF;
+  border-radius: 20px;
   .easy{
+    text-align: center;
     .imG{
       width: 44px;
       height: 44px;
@@ -235,5 +301,98 @@ export default {
       color: #000000;
     }
   }
+}
+.choose{
+  margin: 20px 20px 0;
+  width: 710px;
+  height: 704px;
+  background: #FFFFFF;
+  border-radius: 20px;
+ .recommend{
+  line-height: 44px;
+  width: 710px;
+  height: 80px;
+  background: #38c4fb;
+  border-radius: 20px 20px 0px 0px;
+  padding: 20px;
+
+    .mrecommend{
+      display: block;
+      line-height: 44px;
+      font-size: 26px;
+      font-weight: 600;
+      color: #000000;
+      &::after{
+        width: 36px;
+        height: 8px;
+        color: #fb3838;
+        display: block;
+        border-radius: 10px;
+      }
+    }
+    .gmrecommend{
+      display: block;
+      line-height: 44px;
+      float: right;
+      font-size: 20px;
+      font-weight: 400;
+      color: #737F97;
+    }
+  }
+  .selected{
+    .selectedBtn{
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 40px;
+      color: #000000;
+    }
+    .more{
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 36px;
+      color: #B1B1B1;
+      float: right;
+    }
+  }
+  .safe{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #B1B1B1;
+  }
+  .cbox{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 26px 26px 24px 24px;
+    .abox{
+    .lease{
+    .model{
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 36px;
+      color: #000000;
+    }
+    .fValue{
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 50px;
+      color: #3861FB;
+    }
+    .timeBtn{
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 32px;
+      color: #B1B1B1;
+    }
+    .year{
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 42px;
+      color: #000000;
+    }
+   }
+  }
+  }
+}
 }
 </style>
