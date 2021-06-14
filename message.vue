@@ -12,6 +12,30 @@
         <i class="message2">暂无最新消息</i>
       </div>
     </div>
+    <div>
+      <div class="imgB">
+        <div class="imgC">
+          <img class="imgD" src="../assets/10.png" alt="">
+        </div>
+        <div class="img1">
+          <span class="imgE">
+          客服: Kris
+          <i class="imgF">您好，关于订单的咨询请在下单之后询问</i>
+        </span>
+        </div>
+      </div>
+      <div class="imgB">
+        <div class="imgC">
+          <img class="imgD" src="../assets/10.png" alt="">
+        </div>
+        <div class="img1">
+          <span class="imgE">
+          客服: Ameber
+          <i class="imgF">您好，关于订单的咨询请在下单之后询问</i>
+        </span>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -74,6 +98,36 @@ export default {
       color: #B1B1B1;
       font-style: normal;
    }
+  }
+}
+.imgB{
+  display: flex;
+  .imgC{
+    .imgD{
+      margin: 38px 38px;
+      width: 72px;
+      height: 72px;
+      background: #3396FC;
+      border-radius: 50%;
+      line-height: 72px;
+    }
+  }
+  .img1{
+    margin: 15px;
+    .imgE{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #000000;
+    .imgF{
+      display: block;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 34px;
+      color: #8E8E8E;
+      font-style: normal;
+    }
+    }
   }
 }
 </style>
